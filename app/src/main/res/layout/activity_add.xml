@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/sari"
+    tools:context="com.example.mercimek.quizgame.Add"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="YOUR WORD:"
+        android:id="@+id/textword"
+        android:layout_marginTop="100dp"
+
+        android:background="#397e9f"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/word"
+        android:hint="Enter yours word"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text=" MEANING:    "
+        android:id="@+id/textmean"
+        android:layout_marginTop="20dp"
+
+        android:background="#397e9f"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        android:paddingLeft="2dp"
+        android:layout_gravity="center_vertical" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mean"
+        android:textColor="#000000"
+        android:hint="Enter meaning"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/exit"
+            android:text="FINISH"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/buttonadd"
+
+            />
+
+        <Button
+            android:id="@+id/buttonadd"
+            android:text="ADD"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonadd" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

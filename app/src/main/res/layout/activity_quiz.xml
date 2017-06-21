@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/sari"
+    android:orientation="horizontal"
+    tools:context="com.example.mercimek.quizgame.Quiz">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/question"
+        android:text="kelimeee"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="#B5B8BD"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="65dp"
+        android:layout_alignRight="@+id/choose2"
+        android:layout_alignEnd="@+id/choose2" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/kupa"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/choose2"
+        android:layout_alignStart="@+id/choose2"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:text="0"
+        android:textColor="#FF1F01"
+        android:textSize="15dp"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/score" />
+
+    <Button
+        android:id="@+id/choose2"
+        android:text="Button"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_width="150dp"
+        android:layout_height="63dp"
+        android:layout_alignTop="@+id/choose1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/choose4"
+        android:text="Button"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_width="150dp"
+        android:layout_height="63dp"
+        android:layout_above="@+id/ileri"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"/>
+    <Button
+        android:id="@+id/choose1"
+        android:text="Button"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_width="150dp"
+        android:layout_height="63dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/choose3"
+        android:text="Button"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_width="150dp"
+        android:layout_height="63dp"
+        android:layout_alignTop="@+id/choose4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="FINISH"
+        android:id="@+id/bitti"
+        android:background="#FF1F01"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/choose3"
+        android:layout_alignEnd="@+id/choose3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="FORWARD"
+        android:id="@+id/ileri"
+        android:background="#FF1F01"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/choose4"
+        android:layout_alignStart="@+id/choose4" />
+
+
+</RelativeLayout>
